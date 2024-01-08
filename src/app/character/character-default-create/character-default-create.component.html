@@ -1,0 +1,42 @@
+<header>
+	<h2>Создание персонажа</h2>
+</header>
+
+<section class="general-info">
+	<section class="main-characteristics">
+		<div class="rec-wrapper">
+			<mat-form-field>
+				<mat-label>Раса</mat-label>
+				<mat-select>
+					<mat-option *ngFor="let race of races">{{
+						race
+					}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+
+		<div class="rec-wrapper">
+			<mat-form-field>
+				<mat-label>Класс</mat-label>
+				<mat-select>
+					<mat-option *ngFor="let race of races">{{
+						race
+					}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+
+		<div class="rec-wrapper">
+			<mat-form-field>
+				<mat-label>Уровень</mat-label>
+				<mat-select>
+					<mat-option *ngFor="let race of races">{{
+						race
+					}}</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+	</section>
+
+	<section class="character-image"></section>
+</section>

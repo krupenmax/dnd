@@ -1,0 +1,33 @@
+:host {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	flex: 1 1;
+	padding: 24px 40px;
+
+	h2 {
+		margin: 0;
+		font-family: "DotGothic16", sans-serif;
+		text-align: center;
+	}
+}
+
+section.general-info {
+	margin-top: 48px;
+	padding: 0 24px;
+	display: flex;
+	flex-direction: row;
+
+	section.main-characteristics {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 48px;
+		flex: 2 1;
+	}
+
+	section.character-image {
+		flex: 1 1;
+	}
+}
