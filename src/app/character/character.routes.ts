@@ -7,9 +7,9 @@ const routes: Routes = [
 			{
 				path: "create",
 				loadComponent: () =>
-					import(
-						"./character-default-create/character-default-create.component"
-					).then((i) => i.CharacterDefaultCreateComponent),
+					import("./character-default-create/character-default-create.component").then(
+						(i) => i.CharacterDefaultCreateComponent
+					),
 			},
 		],
 	},

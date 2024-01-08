@@ -73,6 +73,8 @@ $playground-theme: mat.define-light-theme(
 
 :root {
 	--bg-main: #b4a3e7;
+	--bg-second: #9c8ad3;
+	--shadow: 0 4px 20px 0 #1f1f1f;
 }
 
 html,
@@ -80,11 +82,12 @@ body {
 	height: 100%;
 }
 body {
+	font-family: "DotGothic16", sans-serif;
 	margin: 0;
 	width: 100%;
 	min-height: 100%;
 	letter-spacing: 0.005em;
-	font-family: "Roboto";
+	// font-family: "Roboto";
 	color: #1f1f2f;
 }
 
@@ -112,4 +115,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
+}
+
+mat-form-field {
+	color: #fff !important;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+	display: none !important;
 }

@@ -4,10 +4,7 @@ export const routes: Routes = [
 	{
 		path: "",
 		pathMatch: "full",
-		loadComponent: () =>
-			import("./menu-panel/menu-panel.component").then(
-				(i) => i.MenuPanelComponent,
-			),
+		loadComponent: () => import("./menu-panel/menu-panel.component").then((i) => i.MenuPanelComponent),
 	},
 	{
 		path: "character",

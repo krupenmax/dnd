@@ -2,15 +2,13 @@
 	<h2>Создание персонажа</h2>
 </header>
 
-<section class="general-info">
-	<section class="main-characteristics">
+<mat-card class="general-info" [formGroup]="form">
+	<section class="main-characteristics" formGroupName="general">
 		<div class="rec-wrapper">
 			<mat-form-field>
 				<mat-label>Раса</mat-label>
-				<mat-select>
-					<mat-option *ngFor="let race of races">{{
-						race
-					}}</mat-option>
+				<mat-select formControlName="race">
+					<mat-option *ngFor="let race of races" [value]="race.id">{{ race.name }}</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>
@@ -18,10 +16,8 @@
 		<div class="rec-wrapper">
 			<mat-form-field>
 				<mat-label>Класс</mat-label>
-				<mat-select>
-					<mat-option *ngFor="let race of races">{{
-						race
-					}}</mat-option>
+				<mat-select formControlName="class">
+					<mat-option *ngFor="let class of classes" [value]="class.id">{{ class.name }}</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>
@@ -29,14 +25,27 @@
 		<div class="rec-wrapper">
 			<mat-form-field>
 				<mat-label>Уровень</mat-label>
-				<mat-select>
-					<mat-option *ngFor="let race of races">{{
-						race
-					}}</mat-option>
+				<mat-select formControlName="level">
+					<mat-option *ngFor="let level of levels" [value]="level.id">
+						{{ level.name }}
+					</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+
+		<div class="rec-wrapper">
+			<mat-form-field>
+				<mat-label>Черты</mat-label>
+				<mat-select formControlName="trait">
+					<mat-option *ngFor="let level of levels" [value]="level.id">
+						{{ level.name }}
+					</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>
 	</section>
 
-	<section class="character-image"></section>
-</section>
+	<section class="character-image">
+		<img src="assets/images/test.png" alt="Not found" />
+	</section>
+</mat-card>

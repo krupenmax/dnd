@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Бард",
+    "code": "Bard"
+  },
+  {
+    "id": 2,
+    "name": "Варвар",
+    "code": "Barbarian"
+  },
+  {
+    "id": 3,
+    "name": "Воин",
+    "code": "Fighter"
+  },
+  {
+    "id": 4,
+    "name": "Волшебник",
+    "code": "Wizard"
+  },
+  {
+    "id": 5,
+    "name": "Друид",
+    "code": "Druid"
+  },
+  {
+    "id": 6,
+    "name": "Жрец",
+    "code": "Cleric"
+  },
+  {
+    "id": 7,
+    "name": "Изобретатель",
+    "code": "Artificer"
+  },
+  {
+    "id": 8,
+    "name": "Колдун",
+    "code": "Warlock"
+  },
+  {
+    "id": 9,
+    "name": "Монах",
+    "code": "Monk"
+  },
+  {
+    "id": 10,
+    "name": "Паладин",
+    "code": "Paladin"
+  },
+  {
+    "id": 11,
+    "name": "Плут",
+    "code": "Rogue"
+  },
+  {
+    "id": 12,
+    "name": "Следопыт",
+    "code": "Ranger"
+  },
+  {
+    "id": 13,
+    "name": "Чародей",
+    "code": "Sorcerer"
+  }
+]
